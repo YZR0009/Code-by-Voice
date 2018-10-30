@@ -1,0 +1,36 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar 
+ */
+
+grammar grammar;
+
+/*public <syntax>  = (one | two | three| four| five | six | seven | eight | nine | ten | eleven | twelve | thirteen | fourteen | fifteen | sixteen | seventeen | eighteen | nineteen | twenty) 
+                                                          (plus | minus | multiply | division)                          
+                   (one | two | three| four| five | six | seven | eight | nine | ten | eleven | twelve | thirteen | fourteen | fifteen | sixteen | seventeen | eighteen | nineteen | twenty);
+*/
+public <helloWorld> = (example | hello) (class | world);
+
+public <class> = (create)(a class | class)
+						(named | called)
+				(first | my | user| course | coffee | cookie | bunny | candy | football | bank);
+				
+public <method> = (create)(a method | method)
+						(named | called)
+				(First | my | user| course | coffee | cookie | bunny | candy | football | bank);
+				
+public <constructor> = (create)(a constructor | constructor);
+							
+public <method> = (main) (method);
+
+public <toString> = (to)(string);
+
+public <sleep> = (sleep);
+
+public <wakeUp> = (wake up);
+
+public <delete> = (delete)(all);
+
+
+
